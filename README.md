@@ -3,9 +3,6 @@ A lightweight Windows utility that disables movement keys (W/A/S/D) while the fi
 ## Features
 - Disables movement while firing
 - Automatically restores movement if keys are still held
-- No SOCD / Snap Tap logic
-- No macros
-- No key repeat issues
 - Minimal and lightweight
 
 ## How it works

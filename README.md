@@ -10,6 +10,3 @@ A lightweight Windows utility that disables movement keys (W/A/S/D) while the fi
 - Tracks physical key state
 - Gates movement output while fire is held
 - Uses SendInput safely (ignores injected input)
-
-## Build
-Requires MinGW-w64 or MSYS2.

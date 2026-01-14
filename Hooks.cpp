@@ -5,6 +5,9 @@
 HHOOK keyboardHook = NULL;
 HHOOK mouseHook = NULL;
 
+extern bool g_enabled;
+
+
 /* =========================
    KEYBOARD HOOK
    ========================= */
@@ -52,8 +55,9 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
             Update();
 
             // Block original WASD input
-            if (k->vkCode == 'W' || k->vkCode == 'A' ||
-                k->vkCode == 'S' || k->vkCode == 'D') {
+            if (g_enabled &&
+                (k->vkCode == 'W' || k->vkCode == 'A' ||
+                k->vkCode == 'S' || k->vkCode == 'D')) {
                 return 1;
             }
         }

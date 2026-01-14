@@ -1,6 +1,0 @@
-Open this folder in terminal and build the exe with
-"g++ main.cpp Logic.cpp Hooks.cpp Emitter.cpp -o mouse_override -luser32"
-
-Then run it with ".\mouse_override"
-
-Make sure to have MSYS2 installed.
